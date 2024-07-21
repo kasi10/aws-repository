@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your description here">
+    <meta name="keywords" content="your, keywords, here">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Personal Portfolio Website</title>
+</head>
+<body>
+    <!-- Header Design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Kasinadhan B</h1>
+            <h3>And I'm a <span id="typed-output"></span></h3>
+            <p>A passionate frontend web developer with a strong enthusiasm for creating interactive and responsive user experiences. With a solid foundation in HTML, CSS, and JavaScript, I specialize in crafting visually appealing websites that not only captivate users but also ensure seamless functionality across various devices. My expertise extends to leveraging AWS services to deploy scalable and secure web applications. I am dedicated to staying updated with the latest industry trends and technologies, continuously expanding my skill set to deliver innovative solutions that meet client needs effectively.</p>
+           <!-- Social Media Links -->
+<div class="socialmedia">
+    <a href="https://x.com/kas_i10" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://www.instagram.com/kas_i10/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/kasinadhan-b-41b169204/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/kasi10" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+
+
+            <a href="#">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="img/dp.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- About Design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/aboutdp.jpg" alt="Placeholder Image">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">ABOUT<span> ME</span></h2>
+           <!-- <h3>Frontend Developer</h3> -->
+            <p>I am a dedicated front-end developer with a strong proficiency in AWS and a solid foundation in various programming languages. Passionate about crafting elegant and efficient solutions, I continuously strive to expand my skills and stay abreast of industry trends. My journey in web development is driven by a relentless passion for creating immersive user experiences and leveraging technology to solve real-world challenges. With a keen eye for detail and a commitment to excellence, I am eager to contribute to impactful projects and collaborate with teams that share my enthusiasm for innovation.</p>
+        </div>
+    </section>
+
+    <!-- Services Design -->
+    <section class="services" id="services">
+        <h2 class="section-heading">My Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Creating responsive and user-friendly websites using modern technologies like HTML, CSS, JavaScript, and frameworks like React.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-gamepad"></i>
+                <h3>2D Game Development</h3>
+                <p>Designing and developing engaging 2D games with intuitive gameplay mechanics using tools like Unity and Phaser.</p>
+            </div>
+            <div class="service">
+                <i class="fab fa-aws"></i>
+                <h3>AWS Services</h3>
+                <p>Utilizing AWS cloud services to deploy, manage, and scale web applications with high availability and security.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Creating visually appealing and intuitive user interfaces that enhance user experience and engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-heading">Recent Projects</h2>
+        <div class="portfolio-container">
+            <div class="project">
+                <img src="img/4.jpg" alt="Birthday Invitation Project">
+                <div class="project-info">
+                    <h3>Birthday Invitation Project (HTML)</h3>
+                    <p>A simple birthday invitation web page designed using HTML and CSS.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/6.jpg" alt="Capstone Project">
+                <div class="project-info">
+                    <h3>Capstone Project (HTML)</h3>
+                    <p>A comprehensive capstone project demonstrating proficiency in HTML and CSS.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/2.jpg" alt="Delivery Driver 2D Game">
+                <div class="project-info">
+                    <h3>Delivery Driver 2D Game (Unity)</h3>
+                    <p>An engaging 2D game developed using Unity, showcasing gameplay mechanics.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/5.jpg" alt="AWS Projects">
+                <div class="project-info">
+                    <h3>AWS Projects (EC2, S3)</h3>
+                    <p>Deployed multiple web applications using AWS EC2 instances and S3 buckets for scalable and secure solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Design -->
+    <section class="contact" id="contact">
+        <h2 class="section-heading">Contact Me</h2>
+        <div class="contact-form">
+            <form action="mailto:kasinadhanb2003@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Design -->
+    <footer class="footer">
+        <p>&copy; 2024 by @kas_i10 | All Rights Reserved</p>
+    </footer>
+
+    <!-- ScrollReveal.js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
